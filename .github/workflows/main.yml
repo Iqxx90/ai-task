@@ -33,7 +33,7 @@ jobs:
           python main.py --target ${{ github.event.inputs.target }}
 
       - name: Upload results
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: recon-results-${{ github.event.inputs.target }}
           path: outputs/
